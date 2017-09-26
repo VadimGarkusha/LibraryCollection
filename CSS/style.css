@@ -1,0 +1,211 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:300,400|Open+Sans:300,400');
+
+h3 {
+    margin: 30px 0;
+    font-size: 2.5em;
+    font-family: "Open Sans", "Lato", "sans-serif" !important;
+}
+
+p {
+    font-size: 1.2em;
+    font-family: "Open Sans", "Lato", "sans-serif" !important;
+}
+
+h4 {
+    font-size: 2em;
+    font-family: "Open Sans", "Lato", "sans-serif" !important;
+}
+
+
+/*HEADER-------------------------------------------------------*/
+.header-img {
+    position: relative;
+    background-image: url('../images/library.jpg');
+    height: 300px;
+    background-origin: border-box;
+    background-clip: padding-box;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 0px !important;
+    z-index: 1000;
+}
+
+
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #6A6090;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    color: #eee !important;
+    height: 50px !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #eee !important;
+}
+
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #0e1a25 !important;
+    background-color: #eee !important;
+}
+
+
+
+
+/*CONTENT------------------------------------------------------*/
+#content {
+    min-height: 60vh;
+}
+
+
+/*HOME PAGE---------------------------------------------------*/
+.fa {
+    font-size: 5em;
+    margin-top: 10px;
+}
+
+.desc-div {
+    background-color: #474e5d;
+    color: #eee;
+    font-weight: 300 !important;
+    font-family: "Open Sans", "Lato", sans-serif;
+    padding: 0 0 40px 0;
+    display: inline-block!important;
+    width: 100%;
+}
+
+.row div {
+    padding: 0;
+    margin: 10px 0 40px 0;
+}
+
+
+
+/*FOOTER------------------------------------------------------*/
+.icon-1:hover, .icon-2:hover, .icon-3:hover, .icon-4:hover, .icon-5:hover {
+    border-radius: 100%;
+    color: #0e1a25;
+    fill: #0e1a25;
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+    transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+footer {
+    background-color: #6A6090;
+    font-family: "Open Sans", "Lato", "sans-serif";
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #9099a0;
+    padding: 0px !important;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: -2px;
+    color: #eee;
+}
+
+* {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+    *:before {
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+
+    *:after {
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+
+.soc {
+    display: block;
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 24px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+    .soc li {
+        display: inline-block;
+        margin: 8px 12px;
+        margin: 0.8rem 1.2rem;
+    }
+
+    .soc a {
+        display: block;
+        position: relative;
+        height: 40px;
+        height: 4rem;
+        width: 40px;
+        width: 4rem;
+    }
+
+    .soc svg {
+        display: block;
+        height: 40px;
+        width: 40px;
+    }
+
+.icon-1 {
+    color: #eee;
+    fill: #eee;
+}
+
+    .icon-1:hover {
+        background: #eee;
+    }
+
+.icon-2 {
+    color: #eee;
+    fill: #eee;
+}
+
+    .icon-2:hover {
+        background: #eee;
+    }
+
+.icon-3 {
+    color: #eee;
+    fill: #eee;
+}
+
+    .icon-3:hover {
+        background: #eee;
+    }
+
+.icon-4 {
+    color: #eee;
+    fill: #eee;
+}
+
+    .icon-4:hover {
+        background: #eee;
+    }
+
+.icon-5 {
+    color: #eee;
+    fill: #eee;
+}
+
+    .icon-5:hover {
+        background: #eee;
+    }
