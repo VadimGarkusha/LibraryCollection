@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+//VADYM HARKUSHA 300909484
 public partial class MyMasterPage : System.Web.UI.MasterPage
 {
 
@@ -17,7 +17,7 @@ public partial class MyMasterPage : System.Web.UI.MasterPage
     {
         searchLink.Attributes["class"] = "active";
     }
-
+    //VADYM HARKUSHA 300909484
     public void MakeActiveHome()
     {
         homeLink.Attributes["class"] = "active";
@@ -38,3 +38,4 @@ public partial class MyMasterPage : System.Web.UI.MasterPage
         setupLink.Attributes["class"] = "active";
     }
 }
+//VADYM HARKUSHA 300909484

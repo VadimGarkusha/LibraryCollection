@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MyMasterPage.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="_Default" %>
-<%@ MasterType VirtualPath="~/MyMasterPage.master" %>
+<%@ MasterType VirtualPath="~/MyMasterPage.master" %><%--VADYM HARKUSHA 300909484--%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Home</title>
@@ -24,7 +24,7 @@
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
             <div class="col-sm-4">
-                <h4>Download</h4>
+                <h4>Download</h4><%--VADYM HARKUSHA 300909484--%>
                 <i class="fa fa-download" aria-hidden="true"></i>
             </div>
         </div>
@@ -45,3 +45,4 @@
     </div>
 </asp:Content>
 
+<%--VADYM HARKUSHA 300909484--%>

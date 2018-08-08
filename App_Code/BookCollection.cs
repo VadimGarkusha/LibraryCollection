@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+//VADYM HARKUSHA 300909484
 /// <summary>
 /// Summary description for BookCollection
 /// </summary>
+/// //VADYM HARKUSHA 300909484
 public class BookCollection { 
 
     List<Book> bookList;
@@ -23,4 +24,4 @@ public class BookCollection {
     {
         bookList.Add(aBook);
     }
-}
+}//VADYM HARKUSHA 300909484

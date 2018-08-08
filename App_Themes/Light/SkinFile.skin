@@ -1,4 +1,6 @@
-﻿<%--
+﻿<%--VADYM HARKUSHA 300909484--%>
+
+<%--
 Default skin template. The following skins are provided as examples only.
 
 1. Named control skin. The SkinId should be uniquely defined because
@@ -13,4 +15,6 @@ Default skin template. The following skins are provided as examples only.
 
 <asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
 --%>
+<%--VADYM HARKUSHA 300909484--%>
 <asp:TextBox runat="server" Height="25" Width="170"/>
+<%--VADYM HARKUSHA 300909484--%>

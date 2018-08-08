@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+//VADYM HARKUSHA 300909484
 public partial class AddBook : System.Web.UI.UserControl
 {
     public TextBox TxtNameOfBook
@@ -12,7 +12,7 @@ public partial class AddBook : System.Web.UI.UserControl
         set { txtNameOfBook = value; }
         get { return txtNameOfBook; }
     }
-
+    //VADYM HARKUSHA 300909484
     public TextBox TxtAuthor
     {
         set { txtAuthor = value; }
@@ -27,4 +27,4 @@ public partial class AddBook : System.Web.UI.UserControl
     {
 
     }
-}
+}//VADYM HARKUSHA 300909484

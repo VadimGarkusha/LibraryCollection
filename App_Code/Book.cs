@@ -6,6 +6,7 @@ using System.Web;
 /// <summary>
 /// Summary description for Book
 /// </summary>
+/// //VADYM HARKUSHA 300909484
 public class Book
 {
     public Book()
@@ -23,7 +24,7 @@ public class Book
         NameOfFriend = nameOfFriend;
         Comment = comment;
     }
-
+    //VADYM HARKUSHA 300909484
     public string Name { get; set; }
     public string Author { get; set; }
     public string Isbn { get; set; }
@@ -33,3 +34,4 @@ public class Book
     public string NameOfFriend { get; set; }
     public string Comment { get; set; }
 }
+//VADYM HARKUSHA 300909484

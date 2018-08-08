@@ -13,7 +13,8 @@ Default skin template. The following skins are provided as examples only.
 
 <asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
 --%>
-
+<%--VADYM HARKUSHA 300909484--%>
 <asp:TextBox runat="server" Height="25" Width="170"  BackColor="#444444" ForeColor="#eeeeee"/>
-
+<%--VADYM HARKUSHA 300909484--%>
 <asp:DropDownList runat="server"  ForeColor="#eeeeee" BackColor="#444444"/>
+<%--VADYM HARKUSHA 300909484--%>

@@ -1,8 +1,8 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:300,400|Open+Sans:300,400');
-
+/*VADYM HARKUSHA 300909484*/
 body {
     text-align: center;
-    background-color: #1a1a1a;
+    background-color: #303030;
 }
 
 h3 {
@@ -36,6 +36,9 @@ h4 {
     background-repeat: no-repeat;
     padding: 0px !important;
     z-index: 1000;
+    -webkit-box-shadow: inset 0px 3px 300px 19px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 3px 300px 19px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 3px 300px 19px rgba(0,0,0,0.75);
 }
 
 
@@ -64,7 +67,22 @@ h4 {
     background-color: #A293DC !important;
 }
 
+#login * {
+    display: inline-block;
+    padding-top: 7px;
+    margin: 0;
+}
 
+#login {
+    display: inline-block;
+    height: 100%;
+    float: left;
+    padding-left: 10px;
+}
+
+.login-text {
+    padding-top: 15px !important;
+}
 
 
 /*CONTENT------------------------------------------------------*/
@@ -72,6 +90,7 @@ h4 {
     min-height: 55vh;
     display: inline-block;
     width: 100%;
+    margin-bottom: 20px!important;
 }
 
 
@@ -84,13 +103,13 @@ h4 {
 
 .desc-div {
     background-color: #eee;
-    color: #111!important;
+    color: #111 !important;
     font-weight: 300 !important;
     font-family: "Open Sans", "Lato", sans-serif;
     padding: 0 0 40px 0;
     display: inline-block !important;
     width: 100%;
-    box-shadow: inset 0px 20px 42px 0 rgba(162, 147, 220,0.75), inset 0px -20px 42px 0 rgba(162, 147, 220,0.75);
+
 }
 
     .desc-div p, .desc-div h3 {
@@ -185,7 +204,7 @@ footer {
     color: #A293DC;
     fill: #A293DC;
 }
-
+    /*VADYM HARKUSHA 300909484*/
     .icon-1:hover {
         background: #A293DC;
     }
@@ -291,6 +310,7 @@ footer {
 .books {
     width: 80%;
     margin: auto;
+    margin-bottom: 20px !important;
     border: 2px solid #6A6090 !important;
 }
 
@@ -338,3 +358,79 @@ footer {
         font-family: "Lato","Open Sans", "sans-serif" !important;
         padding: 15px 4px;
     }
+
+/*SEARCH--------------------------------------------------*/
+.search-dl {
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+    .search-dl:first-child {
+        text-align: right;
+    }
+
+.serach-h4 {
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+.modal-dialog {
+    margin-top: 30vh !important;
+}
+
+.modal-title {
+    text-align: left;
+    font-size: 1.6em;
+}
+
+.modal-body .title-h3 {
+    display: inline-block;
+    font-size: 1.4em;
+}
+
+.search-dl .add-book-btn {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.modal-content {
+    background-color: #333;
+}
+
+
+.search-field {
+    width: 40% !important;
+}
+
+.search-dl:nth-of-type(5) input {
+    float: left;
+}
+
+/*LOGIN-------------------------------------------*/
+.login-tbl {
+    width: 100%;
+}
+
+.label-login, .label-login * {
+    font-size: 1.2em !important;
+    font-family: "Lato","Open Sans", "sans-serif" !important;
+    font-weight: 300 !important;
+    padding: 12px 10px;
+    margin: 0;
+    color: #eee;
+}
+
+.row-login {
+    width: 50%;
+}
+
+    .row-login:nth-child(2n) * {
+        float: left;
+    }
+
+td .add-book-btn {
+    margin-right: 47%;
+    display: inline-block;
+}
+/*VADYM HARKUSHA 300909484*/

@@ -1,4 +1,5 @@
-﻿<%@ Page Title="Add Book" Language="C#" MasterPageFile="~/MyMasterPage.master" AutoEventWireup="true" CodeFile="AddBook.aspx.cs" Inherits="_Default" %>
+﻿<%--VADYM HARKUSHA 300909484--%>
+<%@ Page Title="Add Book" Language="C#" MasterPageFile="~/MyMasterPage.master" AutoEventWireup="true" CodeFile="AddBook.aspx.cs" Inherits="_Default" %>
 <%@ MasterType VirtualPath="~/MyMasterPage.master" %>
 <%@ Register Src="~/AddBookControl.ascx" TagPrefix="uc1" TagName="AddBookControl" %>
 
@@ -6,6 +7,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:Label ID="lblError" runat="server" Text=""></asp:Label>
     <div id="add-book-div">
     <h3 class="title-h3">Add Book</h3>
     <div class="col-sm-6 col-md-6 add-book-col ">
@@ -18,9 +20,10 @@
         <h5>Name of a friend:</h5>
         <h5>Comments:</h5>
     </div>
+        <%--VADYM HARKUSHA 300909484--%>
     <div class="col-sm-6 col-md-6 add-book-col ">
         <uc1:AddBookControl runat="server" ID="AddBookControl" />
-        <asp:DropDownList ID="ddListGenre" runat="server" Height="29px" Width="172px">
+        <asp:DropDownList ID="ddListGenre" runat="server" Height="29px" Width="172px" DataSourceID="LibraryCollection" DataTextField="GenreName" DataValueField="GenreID">
             <asp:ListItem Selected="True">Comedy</asp:ListItem>
             <asp:ListItem>Drama</asp:ListItem>
             <asp:ListItem>Horror fiction</asp:ListItem>
@@ -29,10 +32,12 @@
             <asp:ListItem>Tragedy</asp:ListItem>
             <asp:ListItem>Fantasy</asp:ListItem>
             <asp:ListItem>Mythology</asp:ListItem>
-        </asp:DropDownList><br />
+        </asp:DropDownList>
+        <asp:SqlDataSource ID="LibraryCollection" runat="server" ConnectionString="<%$ ConnectionStrings:LibraryCollection %>" SelectCommand="SELECT [GenreID], [GenreName] FROM [Genres]"></asp:SqlDataSource>
+        <br />
         <asp:TextBox ID="txtNumberOfPages" runat="server" TextMode="Number"></asp:TextBox>
         <asp:RequiredFieldValidator ID="reqFieldNumberPages" runat="server" ControlToValidate="txtNumberOfPages" Display="Dynamic" ErrorMessage="Number of pages field is required!"></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="txtNumberOfPages" Display="Dynamic" ErrorMessage="Enter positive integer!" Operator="GreaterThanEqual" Type="Integer" ValueToCompare="1"></asp:CompareValidator>
+        <asp:CompareValidator ID="comValNumberPages" runat="server" ControlToValidate="txtNumberOfPages" Display="Dynamic" ErrorMessage="Enter positive integer!" Operator="GreaterThanEqual" Type="Integer" ValueToCompare="1"></asp:CompareValidator>
         <br />
         <asp:RadioButton ID="rbtnLendedToFriendYes" runat="server" GroupName="LendedToFriend" Text="Yes" OnCheckedChanged="rbtnLendedToFriendYes_CheckedChanged" AutoPostBack="True"/>
         <asp:RadioButton ID="rbtnLendedToFriendNo" runat="server" GroupName="LendedToFriend" Text="No" Checked="True" OnCheckedChanged="rbtnLendedToFriendYes_CheckedChanged" AutoPostBack="True"/>
@@ -49,4 +54,4 @@
         <asp:Button CssClass="add-book-btn" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
 
 </asp:Content>
-
+<%--VADYM HARKUSHA 300909484--%>
